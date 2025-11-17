@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login | Cake Shop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Login</h2>
+
+    <form method="POST">
+        <input type="text" name="username" placeholder="Enter Name" required>
+        <input type="password" name="password" placeholder="Enter Password" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <p style="text-align:center; margin-top:15px;">
+        <a href="{{ url_for('register') }}" style="color:#294a6f;">New user? Register</a>
+    </p>
+</div>
+
+</body>
+</html>

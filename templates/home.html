@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home | Cake Shop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="navbar">
+    <span>Welcome, {{ username }}!</span>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</div>
+
+<h2 class="title">Our Special Cakes</h2>
+
+<div class="grid-box">
+
+    <div class="card">
+        <img src="/static/images/chocolate-truffle.jpg" alt="Chocolate Truffle">
+        <h3>Chocolate Truffle</h3>
+        <a class="book-btn">Book Now</a>
+    </div>
+
+    <div class="card">
+        <img src="/static/images/redvelvet.jpg" alt="Red Velvet">
+        <h3>Red Velvet</h3>
+        <a class="book-btn">Book Now</a>
+    </div>
+
+    <div class="card">
+        <img src="/static/images/blueberry.jpg" alt="Blueberry Cream">
+        <h3>Blueberry Cream</h3>
+        <a class="book-btn">Book Now</a>
+    </div>
+
+</div>
+
+</body>
+</html>
